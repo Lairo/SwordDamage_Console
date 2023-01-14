@@ -29,7 +29,7 @@ namespace SwordDamage_Console
 
         }
 
-        //My answer
+        //My solution
         //public static SwordDamage sword = new SwordDamage();
         //public static Random randomizer = new Random();
 
