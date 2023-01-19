@@ -84,7 +84,7 @@ namespace SwordDamage_Console
         /// </summary>
         /// <param name="startingRoll">Starting 3d6 roll</param>
 
-        private SwordDamage(int startingRoll)
+        public SwordDamage(int startingRoll)
         {
             roll = startingRoll;
             CalculateDamage();
