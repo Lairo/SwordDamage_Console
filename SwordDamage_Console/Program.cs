@@ -10,7 +10,7 @@ namespace SwordDamage_Console
     {
 
         static Random random = new Random();
-        public static void Main(string[] args) // answer
+        public static void Main(string[] args)
         {
             
             SwordDamage swordDamage = new SwordDamage(RollDice());
@@ -20,8 +20,6 @@ namespace SwordDamage_Console
                     "3 for both, anything else to quit:" );
                 char key = Console.ReadKey().KeyChar;
                 if (key != '0' && key != '1' && key != '2' && key != '3') return;
-                
-                //int roll = random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7);
                 swordDamage.Roll = RollDice();
                 swordDamage.Magic = (key == '1' || key == '3');
                 swordDamage.Flaming = (key == '2' || key == '3');
